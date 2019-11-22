@@ -125,7 +125,7 @@ public class PersonType
 }
 ```
 
-If we bind our type to a specific entity type, then we will by default infer the possible type structure and it`s resolvers from the .NET type.
+If we bind our type to a specific entity type, then we will by default infer the possible type structure and its resolvers from the .NET type.
 
 We can always overwrite the defaults or define everything explicitly.
 
@@ -162,7 +162,7 @@ Furthermore, we can also include all fields of a resolver type implicitly like t
 descriptor.Include<PersonResolvers>();
 ```
 
-We can also reverse the relationship between the type and it`s resolvers by annotating the resolver type with the entity or schema type name for which the resolver type provides resolvers.
+We can also reverse the relationship between the type and its resolvers by annotating the resolver type with the entity or schema type name for which the resolver type provides resolvers.
 
 ```CSharp
 [GraphQLResolverOf(typeof(Person))]
